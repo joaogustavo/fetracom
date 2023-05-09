@@ -1,0 +1,644 @@
+/*
+-------------------------- RESET + HOVER --------------------------
+*/
+@import url("normalize.css");
+@import url("hover.css");
+/*
+---------------------------- WEBFONTS -----------------------------
+*/
+@import url("webfonts.css");
+/*
+------------------------------ MENU -------------------------------
+*/
+@import url("menu.css");
+/*
+---------------------- REDEFINICAO CSS GLOBAL ---------------------
+*/
+html {font-size: 62.5%;}
+*{text-rendering: optimizeLegibility;}
+::selection{background: #0273a8;color: #ffffff;}
+::-moz-selection{background: #0273a8;color: #ffffff;}
+body {
+	background: #ffffff;
+	color: #3f3e3e;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: 2000px;
+	min-width: 280px;
+	position: relative;
+	z-index: 2;
+}
+/*
+------------------- CSS OCULTAR MOBILE EM DESKTOP ------------------
+*/
+@media screen and (min-width: 768px){.mobile{display: none !important;visibility: hidden !important;}}
+/*
+------------------- ESTRUTURA SECOES + ELEMENTOS -------------------
+*/
+.oculto{
+	display: none !important;
+	visibility: hidden !important;
+}
+.banners.corpo,.titulos,.conteudos,#rodape,.rodape{box-sizing: border-box;overflow: visible;position: relative;z-index: 5;}
+#topo {
+	background: url(../img/topo.jpg) no-repeat center top;
+	border-bottom: solid 5px #edf2f5;
+	max-width: 2000px;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+.topo {
+	float: none;
+	margin: 0 auto;
+	max-width: 1080px;
+	padding: 0 15px;
+	position: relative;
+	width: 100%;
+}
+#logo {
+	display: inline-block;
+	margin: 25px 15px 32px 0;
+	max-width: 425px;
+	position: relative;
+	width: 100%;
+	z-index: 300;
+}
+.logo {
+	background: url(../img/logo.png) no-repeat left top;
+	background-size: contain;
+	display: block;
+	height: 159px;
+	max-width: 420px;
+	text-indent: -9999px;
+	width: 100%;
+}
+.logo:after {
+	border-left: solid 3px #f8f8f8;
+	color: #0069b4;
+	content: 'Federação dos Trabalhadores no Comércio';
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.7rem;
+	font-weight: 400;
+	display: block;
+	height: auto;
+	line-height: 2.1rem;
+	padding: 28px 20px;
+	padding-right: 0;
+	position: absolute;
+	right: 27px;
+	text-indent: 0px;
+	text-transform: uppercase;
+	top: 40px;
+	width: 167px;
+}
+#busca {
+	bottom: 75px;
+	display: inline-block;
+	max-width: 320px;
+	position: absolute;
+	right: 5px;
+	width: 100%;
+}
+#buscaCampo,
+#buscaBt {
+	background: #315ca0;
+	border: none;
+	box-shadow: 0px 3px 0px 0px rgba(227, 228, 232, .8);
+	color: #ffffff;
+	height: 40px;
+	padding: 10px;
+	position: relative;
+}
+#buscaCampo {
+	border-radius: 3px 0 0 3px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+	max-width: 250px;
+	width: 100%;
+}
+#buscaCampo::-webkit-input-placeholder {
+	color: #ffffff;
+}
+#buscaCampo input:-moz-placeholder {
+	color: #ffffff;
+}
+#buscaCampo textarea:-moz-placeholder {
+	color: #ffffff;
+}
+#buscaCampo:focus {
+	outline: none;
+}
+#buscaBt {
+	border-radius: 0 3px 3px 0;
+	font-family: 'fetracom';
+	font-size: 1.8rem;
+	left: -4px;
+	top: 6px;
+	width: 40px;
+}
+/* --------------- FIM DO TOPO --------------- */
+main {
+	background: #ffffff;
+	float: none !important;
+	overflow: visible;
+	padding: 0 !important;
+	position: relative;
+}
+.titulos-e-banners {
+	background: #ffffff;
+	float: none;
+	max-width: 2000px;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+#titulos {
+	background: url(../img/titulos-fundo.jpg) no-repeat center top #ffffff;
+	border-bottom: solid 3px #168bc8;
+	padding: 8px 0;
+	padding-top: 20px;
+	position: relative;
+	width: 100%;
+	z-index: 9;
+}
+.titulos {
+	color: #0069b4;
+	display: block;
+	float: none;
+	font-family: 'gotham_narrow_boldbold';
+	font-size: 3rem;
+	font-style: italic;
+	letter-spacing: -.15rem;
+	line-height: 2rem;
+	margin: 0 auto;
+	max-width: 1100px;
+	padding: 0 2%;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	z-index: 9;
+}
+.titulos:after {
+	background: url(../img/titulos-padrao.jpg) repeat left top;
+	bottom: -27px;
+	content: '';
+	height: 16px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.titulos span,
+.titulos h1,
+.titulos h2,
+.titulos h3,
+.titulos h4,
+.titulos h5,
+.titulos h6 {
+	display: inline-block;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	vertical-align: middle;
+	z-index: 20;
+}
+.titulos h1,
+.titulos span {
+	font-size: 3rem;
+}
+.titulos h2 {
+	font-size: 2.5rem;
+}
+.titulos h3 {
+	font-size: 2rem;
+}
+.titulos h4 {
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+.titulos h5 {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+.titulos h6 {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+.corpo {
+	background: #f7f8fa;
+	display: block;
+	float: none;
+	margin: 0 auto;
+	max-width: 2000px;
+	overflow: hidden;
+	padding: 15px 0;
+	padding-top: 1px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.conteudos {
+	float: none;
+	font-size: 1.6rem;
+	letter-spacing: .05rem;
+	line-height: 2.7rem;
+	margin: 0 auto;
+	max-width: 1140px;
+	padding: 0 2%;
+	padding-top: 30px;
+	position: relative;
+	width: 100%;
+	z-index: 9;
+}
+.conteudos-nav {
+	background: url(../img/conteudos-nav-fundo.jpg) no-repeat center top;
+	margin: 0 auto;
+	max-width: 2000px;
+	padding: 23px 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+.conteudos-nav:before {
+	background: #CEDAE2;
+	content: '';
+	height: 2px;
+	left: 0;
+	position: absolute;
+	top: -2px;
+	width: 100%;
+}
+.conteudos-nav a {
+	color: #ffffff;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.8rem;
+	margin: 0 auto;
+	max-width: 260px;
+	padding: 0 2%;
+	position: relative;
+	text-align: center;
+	text-shadow: 2.229px 2.007px 1px rgba(4, 4, 4, 0.129);
+	width: 100%;
+}
+.conteudos-nav a:hover,
+.conteudos-nav a:focus {
+	text-decoration: none;
+}
+#rodape {
+	background: url(../img/rodape-fundo.jpg) no-repeat center bottom;
+	float: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 300;
+	margin: 25px auto;
+	margin-bottom: 0;
+	max-width: 2000px;
+	padding: 0;
+	padding-bottom: 219px;
+	position: relative;
+	width: 100%;
+}
+#rodape a {
+}
+#rodape a:hover {
+	text-decoration: none;
+}
+.rodape {
+	float: none;
+	margin: 0 auto;
+	max-width: 1140px;
+	overflow: hidden;
+	padding: 21px 2%;
+	position: relative;
+	width: 100%;
+}
+.rodape:after {
+	background: url(../img/rodape-padrao.jpg) repeat left top;
+	content: '';
+	height: 5px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.endereco-email {
+	margin-right: 2%;
+	max-width: 360px;
+	padding: 0;
+	width: 100%;
+}
+.endereco {
+	font-family: 'gotham_narrow_mediummedium';
+	font-size: 1.5rem;
+	font-weight: 900;
+	margin-bottom: 14px;
+	padding-left: 65px;
+	position: relative;
+}
+.endereco:before {
+	background: #278dc1;
+	border: solid 1px transparent;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	color: #ffffff;
+	content: 'c';
+	font-family: 'fetracom';
+	font-size: 3rem;
+	font-weight: normal;
+	height: 49px;
+	left: 0;
+	line-height: 4.7rem;
+	position: absolute;
+	text-align: center;
+	top: 28px;
+	width: 49px;
+}
+.endereco a {
+	color: #278dc1;
+}
+.endereco a:hover {
+	color: #196B94;
+	text-decoration: none;
+}
+.rodape-email {
+	color: #278dc1;
+	font-family: 'gotham_narrow_blackblack';
+	font-size: 1.8rem;
+	padding-left: 65px;
+	position: relative;
+}
+.rodape-email:before {
+	color: #278dc1;
+	content: 'b';
+	font-family: 'fetracom';
+	font-size: 3rem;
+	font-weight: normal;
+	height: 49px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: -10px;
+	width: 49px;
+}
+.filiacao-telefone {
+	border-left: solid 1px #0069b4;
+	border-right: solid 1px #0069b4;
+	display: inline-block;
+	margin-right: 2%;
+	max-width: 363px;
+	padding: 0 34px;
+	text-align: center;
+	width: 100%;
+}
+.filiacao {
+	color: #070707;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 15px 0;
+}
+.rodape-telefone {
+	color: #278dc1;
+	font-family: 'gotham_narrow_blackblack';
+	font-size: 4.5rem;
+	font-weight: bold;
+	padding-left: 63px;
+	position: relative;
+}
+.rodape-telefone:before {
+	background: #278dc1;
+	border: solid 1px transparent;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	color: #ffffff;
+	content: 'f';
+	font-family: 'fetracom';
+	font-size: 3rem;
+	font-weight: normal;
+	height: 49px;
+	left: 0;
+	line-height: 4.7rem;
+	position: absolute;
+	text-align: center;
+	top: -3px;
+	width: 49px;
+}
+.rodape-telefone span {
+	font-size: 2.5rem;
+	left: 63px;
+	position: absolute;
+  top: -15px;
+}
+.rodape-telefone:after {
+	color: #979da0;
+	content: 'Fale Conosco';
+	font-family: 'gotham_narrow_mediummedium';
+	font-size: 2rem;
+	font-weight: normal;
+	height: 49px;
+	position: absolute;
+	right: 0;
+	top: -10px;
+	width: 122px;
+}
+.subir {
+	background: #ffffff;
+	border-radius: 50%;
+	bottom: 30px;
+	color: #bbbbbb !important;
+	display: block;
+	height: 45px;
+	max-width: 45px;
+	position: fixed;
+	right: 3%;
+	width: 100%;
+	z-index: 10;
+}
+.subir:hover,
+.subir:focus {
+	color: #A7A7A7;
+}
+.subir:before {
+	content: '\f139';
+	font-size: 5rem;
+	line-height: 4.7rem;
+	right: 0;
+}
+.gosites-copyright {
+	color: #278dc1;
+	font-family: 'gotham_narrow_blackblack';
+	font-size: 2rem;
+	padding: 25px 100px;
+	text-align: center;
+}
+.gosites {
+	color: #278dc1;
+	display: inline-block;
+	font-size: 1.5rem;
+	line-height: 2.8rem;
+	margin: 0 auto;
+	margin-bottom: 13px;
+	max-width: 125px;
+	width: 100%;
+}
+/*
+----------------------- CSS DE MEDIA QUERIES -----------------------
+*/
+@media screen and (max-width:1047px) {
+.gosites-copyright {
+	padding: 25px 2%;
+}
+}
+@media screen and (max-width:1009px) {
+.endereco-email {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.filiacao-telefone {
+	border-bottom: solid 1px #0069b4;
+	border-left: none;
+	border-right: none;
+	border-top: solid 1px #0069b4;
+	display: block;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+}
+/*
+----------------------- CSS INFERIOR A 767px -----------------------
+*/
+@media screen and (max-width: 767px){
+/* ANIMACAO DE TODOS OS ELEMENTOS */
+*{text-rendering: geometricPrecision;-webkit-transition: all ease .7s;-moz-transition: all ease .7s;transition: all ease .7s;}
+
+/* OCULTAR ELEMENTOS DE DESKTOP */
+.desktop{display: none !important;visibility: hidden !important;}
+
+/* CONTORNO DE LINKS EM MOBILE */
+a:focus{outline: none;}.
+
+/* EXIBIR ELEMENTOS DE MOBILE E EXIBIR EM BLOCO 100% */
+mobile{display:block !important;float:none;visibility:visible !important;}
+#topo,
+.topo {
+	margin-bottom: 0;
+}
+/* ESTRUTURA SECOES + ELEMENTOS */
+#topo {
+	background: rgba(255,255,255,0.83);
+	border-bottom: none;
+	box-shadow: rgba(221, 221, 221, 0.329412) 0px 1px 5px 0px;
+	left: 0px;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+#logo {
+	float: left;
+	height: 60px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+	margin-top: 8px;
+	max-width: 250px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	z-index: 21;
+}
+.logo {
+	height: 60px;
+	max-width: 250px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.logo:after {
+	display: none;
+	visibility: hidden;
+}
+.titulos-e-banners {
+	margin-top: 61px;
+}
+#titulos {
+	background-size: 100%;
+	left: 0;
+	letter-spacing: -.1rem;
+	margin-bottom: 0;
+	margin-top: 76px;
+	padding: 6px 2%;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+.titulos {
+	display: inline-block;
+	line-height: 1rem;
+	padding: 0;
+}
+.titulos:after {
+	display: none;
+	visibility: hidden;
+}
+.titulos h1,
+.titulos span {
+	font-size: 2.2rem;
+}
+.titulos h2 {
+	font-size: 2rem;
+}
+.titulos h3 {
+	font-size: 1.8rem;
+}
+.titulos h4 {
+	font-size: 1.6rem;
+}
+.titulos h5 {
+	font-size: 1.2rem;
+}
+.titulos h6 {
+	font-size: 1rem;
+}
+.titulos span:before, .titulos h1:before, .titulos h2:before, .titulos h3:before, .titulos h4:before, .titulos h5:before, .titulos h6:before {
+	bottom: -3px;
+	height: 2px;
+}
+.titulos span:after, .titulos h1:after, .titulos h2:after, .titulos h3:after, .titulos h4:after, .titulos h5:after, .titulos h6:after {
+	bottom: -8px;
+	height: 2px;
+}
+.corpo {
+	padding-top: 0;
+}
+.conteudos {
+	font-size: 1.45rem;
+	margin-top: 0;
+	min-height: 20px;
+	padding: 6px 2% 0px 2%;
+}
+.conteudos:before {
+	left: 0;
+	top: -3px;
+}
+.conteudos:after {
+	left: 0;
+	top: -5px;
+	width: 25%;
+}
+.subir {
+	bottom: 10px;
+	opacity: .8;
+	width: 45px;
+	z-index: 1000;
+}
+}

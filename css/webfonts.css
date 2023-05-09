@@ -1,0 +1,57 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+/*
+------------------ FONT AWESOME --------------------------
+	font-family: 'FontAwesome'
+*/
+/*
+/****************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+/*
+---------------- ROBOTO THIN -------------------
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+*/
+/*
+---------------- ROBOTO LIGHT -------------------
+	font-weight: 300;
+*/
+/*
+---------------- ROBOTO NORMAL-------------------
+	font-weight: 400;
+*/
+/*
+---------------- ROBOTO MEDIUM ------------------
+	font-weight: 500;
+*/
+/*
+---------------- ROBOTO BOLD --------------------
+	font-weight: 700;
+*/
+/*
+---------------- ROBOTO ULTRABOLD ---------------
+	font-weight: 900;
+*/
+/****************************************************************************************/
+@import url("../fonts/fetracom/ff-fetracom.css");
+/*
+---------------- FETRACOM ------------------------
+	font-family: "fetracom";
+*/
+/****************************************************************************************/
+@import url("../fonts/gotham/ff-gotham.css");
+/*
+---------------- GOTHAM LIGHT --------------------
+	font-family: 'gotham_narrow_lightlight';
+*/
+/*
+---------------- GOTHAM MEDIUM -------------------
+	font-family: 'gotham_narrow_mediummedium';
+*/
+/*
+---------------- GOTHAM BOLD ---------------------
+	font-family: 'gotham_narrow_boldbold';
+*/
+/*
+---------------- GOTHAM BLACK ---------------------
+	font-family: 'gotham_narrow_blackblack';
+*/

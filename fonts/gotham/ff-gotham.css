@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'gotham_narrow_lightlight';
+	src: url('gothamnarrow-light-webfont.woff2') format('woff2'),  url('gothamnarrow-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gotham_narrow_mediummedium';
+	src: url('gothamnarrow-medium-webfont.woff2') format('woff2'),  url('gothamnarrow-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gotham_narrow_blackblack';
+	src: url('gothamnarrow-black-webfont.woff2') format('woff2'),  url('gothamnarrow-black-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gotham_narrow_boldbold';
+	src: url('gothamnarrow-bold-webfont.woff2') format('woff2'),  url('gothamnarrow-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
